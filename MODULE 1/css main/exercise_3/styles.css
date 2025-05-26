@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: navy;
+}
+
+#mainHeader {
+  background-color: yellow;
+  padding: 10px;
+}
+
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+}
+
+h3, p {
+  font-style: italic;
+}

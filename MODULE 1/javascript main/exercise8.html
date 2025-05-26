@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Handling</title>
+</head>
+<body>
+    <select id="filter">
+        <option value="all">All</option>
+        <option value="Music">Music</option>
+    </select>
+
+    <input type="text" id="search" placeholder="Search...">
+
+    <button onclick="register()">Register</button>
+
+    <script>
+        function register() {
+            alert("You are registered!");
+        }
+
+        document.getElementById("filter").onchange = function() {
+            console.log("Filter changed to:", this.value);
+        };
+
+        document.getElementById("search").addEventListener("keydown", function(e) {
+            console.log("Searching:", e.key);
+        });
+    </script>
+</body>
+</html>

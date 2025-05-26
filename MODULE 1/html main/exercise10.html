@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging</title>
+    <style>
+        .highlight { color: blue; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2 class="highlight">Debugging Demo</h2>
+    <p id="info">Open Chrome DevTools to debug this script.</p>
+
+    <script>
+        const message = "Debugging in action!";
+        console.log(message);
+        debugger;
+        document.getElementById("info").textContent = message;
+    </script>
+</body>
+</html>

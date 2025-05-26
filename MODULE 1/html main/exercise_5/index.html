@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    form {
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+  </style>
+  <title>Event Registration</title>
+</head>
+<body>
+  <form onsubmit="document.getElementById('output').value='Registered successfully'; return false;">
+    <input type="text" name="name" placeholder="Name" required autofocus><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="date" name="date" required><br>
+    <select name="eventType">
+      <option>Workshop</option>
+      <option>Seminar</option>
+    </select><br>
+    <textarea name="message" placeholder="Your message"></textarea><br>
+    <button type="submit">Submit</button>
+    <output id="output"></output>
+  </form>
+</body>
+</html>

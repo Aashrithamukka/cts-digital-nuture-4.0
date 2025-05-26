@@ -1,0 +1,1 @@
+Open DevTools in Chrome (F12) to simulate different screen sizes, check styles, and debug using the device toolbar and Network tab.

@@ -1,0 +1,14 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+}
+
+/* Style for main CTA button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}

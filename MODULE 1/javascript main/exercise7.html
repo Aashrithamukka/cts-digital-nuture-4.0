@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="eventList"></div>
+
+    <script>
+        const events = [
+            { name: "Yoga", category: "Health" },
+            { name: "Concert", category: "Music" }
+        ];
+
+        const eventList = document.querySelector("#eventList");
+
+        events.forEach(evt => {
+            const card = document.createElement("div");
+            card.textContent = `${evt.name} - ${evt.category}`;
+            eventList.appendChild(card);
+        });
+    </script>
+</body>
+</html>
